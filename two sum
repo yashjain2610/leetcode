@@ -1,0 +1,19 @@
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        // looping through the loop two times
+        for(int i = 0; i < nums.size(); i++){
+            for(int j = 0; j < nums.size(); j++){
+                // skiping the case if both have same positions
+                if(i == j){
+                    continue;
+                }
+                // checking for condition
+                else if(nums[i] + nums[j] == target){
+                    return {i,j};
+                }
+            }
+        }
+        return {0};
+    }
+};
