@@ -1,6 +1,7 @@
 class Solution {
 public:
     void sortColors(vector<int>& nums) {
+        // sort colors
         // creating an array to put the rearranged numbers
         vector<int> answer;
         // finding the number in nums
