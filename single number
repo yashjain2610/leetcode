@@ -1,6 +1,7 @@
 class Solution {
 public:
     int singleNumber(vector<int>& nums) {
+    // single number
         if (nums.size() < 1){
             return 0;
         }
