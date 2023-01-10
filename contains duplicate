@@ -1,6 +1,7 @@
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
+        // contains duplicate
         if(nums.size() < 1){
             return false;
         }
