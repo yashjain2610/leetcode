@@ -1,13 +1,22 @@
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
-
-        sort(nums.begin(),nums.end());
+        if(nums.size() < 1){
+            return false;
+        }
+        else if(nums.size() > 1){
+            // sorting the arrays so that same numbers come together
+            sort(nums.begin(),nums.end());
+            // looping through the array
         for(int i = 0; i < nums.size() - 1; i++){
+            // checking if the numbr appears twice
             if(nums[i] == nums[i+1]){
                 return true;
             }
         }
+
+        }
+        // if no number appears twice        
         return false;
     }
 };
